@@ -134,6 +134,7 @@ html,
 body {
   height: 100%;
 }
+/* To Due: contact info, color variable */
 .container {
   margin: 4%;
 }
@@ -249,9 +250,24 @@ footer {
   display: flex;
   justify-content: center;
 }
+footer .contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+footer .contact-info h2 {
+  padding: 1% 0;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2rem;
+  color: white;
+}
 footer p {
   width: 100%;
   color: white;
+  display: flex;
+  padding: 5px 0;
+}
+footer .copyright {
   display: flex;
   justify-content: center;
 }

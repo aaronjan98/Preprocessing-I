@@ -56,8 +56,9 @@ table {
 html, body {
 	height: 100%;
 }
-
+/* To Due: contact info, color variable */
 @heading-font: 'Roboto Mono', monospace;
+@font-color: white;
 .flexMixin(){
 	display: flex;
 }
@@ -109,7 +110,7 @@ html, body {
 			border: none;
 			border-radius: 5px;
 			background: rgb(120, 131, 120);
-			color: white;
+			color: @font-color;
 		}
 	}//end of top
 
@@ -183,10 +184,23 @@ footer{
   padding: 3%;
   display: flex;
   justify-content: center;
+  .contact-info{
+	  .flexMixin();
+	  flex-direction: column;
+	  justify-content: flex-end;
+	  h2{
+		  .titleFont();
+		  color: @font-color;
+	  }
+  }
   p{
 		width: 100%;
-		color: white;
+		color: @font-color;
 		display: flex;
-		justify-content: center;
+		padding: 5px 0;
 	  }//end of p
+	  .copyright{
+		  .flexMixin();
+		  justify-content: center;
+	  }
   }//end of footer
