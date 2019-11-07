@@ -137,40 +137,40 @@ body {
 .container {
   margin: 4%;
 }
-header {
+.container header {
   padding-bottom: 20px;
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
   justify-content: flex-end;
 }
-header nav {
+.container header nav {
   width: 40%;
   display: flex;
   justify-content: space-between;
 }
-header nav a {
+.container header nav a {
   text-decoration: none;
   color: black;
 }
-.top {
+.container .top {
   background-color: #D5D9E1;
   padding: 4% 2%;
 }
-.top .mainImg img {
+.container .top .mainImg img {
   width: 20%;
 }
-.top h1 {
+.container .top h1 {
   padding: 1% 0;
   font-family: 'Roboto Mono', monospace;
   font-size: 2rem;
 }
-.top p {
+.container .top p {
   padding: 2% 0;
 }
-.top .technology {
+.container .top .technology {
   border-bottom: 1px dotted black;
 }
-.top button {
+.container .top button {
   font-size: 1rem;
   padding: 1% 2%;
   border: none;
@@ -178,60 +178,67 @@ header nav a {
   background: #788378;
   color: white;
 }
-.listen-row {
+.container .listen-row {
   width: 100%;
   display: flex;
   padding: 2% 0;
 }
-.listen-row .listen-column {
+.container .listen-row .listen-column {
   width: 49%;
 }
-.listen-row .listen-column h2 {
+.container .listen-row .listen-column h2 {
   padding: 1% 0;
   font-family: 'Roboto Mono', monospace;
   font-size: 1.5rem;
 }
-.listen-row .listen-column p {
+.container .listen-row .listen-column p {
   padding: 1% 2% 1% 0;
 }
-.listen-row .stuff-column {
+.container .listen-row .stuff-column {
   width: 50%;
 }
-.listen-row .stuff-column h2 {
+.container .listen-row .stuff-column h2 {
+  width: 100%;
   padding: 1% 0;
   font-family: 'Roboto Mono', monospace;
   font-size: 1.2rem;
 }
-.listen-row .stuff-column .stuff-table {
+.container .listen-row .stuff-column .stuff-table {
   padding: 1% 0;
-  width: 50%;
+  width: 200%;
   display: flex;
   flex-direction: column;
 }
-.listen-row .stuff-column .stuff-table td {
-  width: 676%;
-  padding: 10px;
+@media (max-width: 500px) {
+  .container .listen-row .stuff-column .stuff-table {
+    width: 120%;
+  }
 }
-.work-row {
+.container .listen-row .stuff-column .stuff-table td {
+  width: 100%;
+  padding: 10px;
+  border: 1px dotted #a8a8a8;
+}
+.container .work-row {
   padding-bottom: 2%;
 }
-.work-row h2 {
+.container .work-row h2 {
   padding: 1% 0;
   font-family: 'Roboto Mono', monospace;
   font-size: 1.2rem;
   border-bottom: 1px dotted grey;
 }
-.work-row .work-table {
+.container .work-row .work-table {
   width: 100%;
   border-collapse: collapse;
 }
-td,
-th {
+.container .work-row .work-table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.container td,
+.container th {
   text-align: left;
   padding: 8px;
-}
-tr:nth-child(even) {
-  background-color: #dddddd;
 }
 /*------footer-----*/
 footer {
