@@ -60,7 +60,7 @@ html, body {
 @heading-font: 'Roboto Mono', monospace;
 
 
-body{
+.container{
 	margin: 4%;
 }
 header{
@@ -83,9 +83,12 @@ header{
 .top{
 	background-color: #D5D9E1;
 	padding: 4% 2%;
+	.mainImg img{
+		width: 20%;
+	}
 	h1{
 		padding: 1% 0;
-		font-family: 'Roboto Mono', monospace;
+		font-family: @heading-font;
 		font-size: 2rem;
 	}//end of h1
 	p{
@@ -104,13 +107,78 @@ header{
 	}
 }//end of top
 
-.mainImg img{
-	width: 20%;
-}
-.stuff-table{
+.listen-row{
+	width: 100%;
 	display: flex;
-	flex-direction: column;
+	padding: 2% 0;
+	
+	.listen-column{
+		width: 49%;
+		h2{
+			padding: 1% 0;
+			font-family: @heading-font;
+			font-size: 1.5rem;
+		}//end of h2
+		p{
+			padding: 1% 2% 1% 0;
+		}
+	}//end of listen-column
+
+	.stuff-column{
+		width: 50%;
+		h2{
+			padding: 1% 0;
+			font-family: @heading-font;
+			font-size: 1.2rem;
+		}
+		.stuff-table{
+			padding: 1% 0;
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			td{
+				width: 676%;
+				padding: 10px;
+			}//end of td
+		}//end of stuff-table
+	}//end of stuff-column
+}//end of listen-row
+
+.work-row{
+	padding-bottom: 2%;
+	h2{
+		padding: 1% 0;
+		font-family: @heading-font;
+		font-size: 1.2rem;
+		border-bottom: 1px dotted grey;
+
+	}
+	.work-table{
+		width: 100%;
+		border-collapse: collapse;
+	}
 }
-stuff-table, td{
-	border: 1px solid gray;
+
+td, th {
+	text-align: left;
+	padding: 8px;
 }
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+  /*------footer-----*/
+footer{
+  width: 95%;
+  margin: 0 2%;
+  background: rgb(120, 131, 120);
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  p{
+		width: 100%;
+		color: white;
+		display: flex;
+		justify-content: center;
+	  }
+  }

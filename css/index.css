@@ -134,7 +134,7 @@ html,
 body {
   height: 100%;
 }
-body {
+.container {
   margin: 4%;
 }
 header {
@@ -156,6 +156,9 @@ header nav a {
   background-color: #D5D9E1;
   padding: 4% 2%;
 }
+.top .mainImg img {
+  width: 20%;
+}
 .top h1 {
   padding: 1% 0;
   font-family: 'Roboto Mono', monospace;
@@ -175,14 +178,73 @@ header nav a {
   background: #788378;
   color: white;
 }
-.mainImg img {
-  width: 20%;
+.listen-row {
+  width: 100%;
+  display: flex;
+  padding: 2% 0;
 }
-.stuff-table {
+.listen-row .listen-column {
+  width: 49%;
+}
+.listen-row .listen-column h2 {
+  padding: 1% 0;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.5rem;
+}
+.listen-row .listen-column p {
+  padding: 1% 2% 1% 0;
+}
+.listen-row .stuff-column {
+  width: 50%;
+}
+.listen-row .stuff-column h2 {
+  padding: 1% 0;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2rem;
+}
+.listen-row .stuff-column .stuff-table {
+  padding: 1% 0;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
-stuff-table,
-td {
-  border: 1px solid gray;
+.listen-row .stuff-column .stuff-table td {
+  width: 676%;
+  padding: 10px;
+}
+.work-row {
+  padding-bottom: 2%;
+}
+.work-row h2 {
+  padding: 1% 0;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2rem;
+  border-bottom: 1px dotted grey;
+}
+.work-row .work-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td,
+th {
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+/*------footer-----*/
+footer {
+  width: 95%;
+  margin: 0 2%;
+  background: #788378;
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+}
+footer p {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
